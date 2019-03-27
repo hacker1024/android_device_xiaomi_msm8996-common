@@ -17,6 +17,12 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">200</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
